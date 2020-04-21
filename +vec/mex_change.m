@@ -1,0 +1,6 @@
+% Usage: mex_change(mex_vector, index, [value])
+% Change a value inside the vector "mex_vector" without invoking copy-on-write...
+% INPUTS: -mex_vector is a vector or a uint64/double numeric value that can be de-referenced to a valid pointer.
+%		  -index is the (1-based) index in the vector (if you give an illegal value matlab will crash...
+%         -value is the new value to put in the vector (must be a scalar double).
+%		   If no 'value' is given, just increase that element in the vector by 1.
